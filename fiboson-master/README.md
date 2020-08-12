@@ -1,2 +1,2 @@
 # fiboson
-Função top das galáxias
+Função top das galáxias.
