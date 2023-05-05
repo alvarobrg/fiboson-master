@@ -1,13 +1,9 @@
-function fibonacci(qtde){
-	var penultimo = 0, ultimo = 1, numero = 0, count = 0, str = '';
-	
-	while( count < qtde){
-		numero = ultimo + penultimo;
-		penultimo = ultimo;
-		ultimo = numero;
-		count ++;
-		str = str + numero + ', ';
+function fibonacci(n) {
+	if (n <= 1) {
+	  return n;
 	}
+	
+	return fibonacci(n - 1) + fibonacci(n - 2);
+  }
 
-	console.log(str);
-}
+fibonacci(5);
